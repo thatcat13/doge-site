@@ -1,0 +1,19 @@
+nav {
+  & .nav-brand {
+    & img {
+    }
+    & p {
+      margin: 0;
+    }
+  }
+  & .nav-list {
+    & ul {
+      list-style: none;
+      display: inline-flex;
+      padding-left: 0;
+      & li {
+        padding-right: 10%;
+      }
+    }
+  }
+}

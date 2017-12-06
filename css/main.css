@@ -57,6 +57,9 @@ img {
   max-width: 100%;
   height: auto !important; }
 
+.equal-height {
+  display: flex; }
+
 .wrapper {
   width: 100%;
   margin: 0 auto; }
@@ -285,6 +288,15 @@ img {
 
   .offset-lg-12 {
     margin-left: 100%; } }
+nav .nav-brand p {
+  margin: 0; }
+nav .nav-list ul {
+  list-style: none;
+  display: inline-flex;
+  padding-left: 0; }
+  nav .nav-list ul li {
+    padding-right: 10%; }
+
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Correct the line height in all browsers.
