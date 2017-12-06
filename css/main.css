@@ -12,15 +12,6 @@ html {
 *::after {
   box-sizing: inherit; }
 
-/* For testing only */
-*:not(body):not(html) {
-  box-sizing: border-box;
-  border: 1px dashed #000; }
-
-[class*='col-'] {
-  min-height: 100px; }
-
-/* End for testing */
 /**
  * Clear inner floats
  */
@@ -288,14 +279,17 @@ img {
 
   .offset-lg-12 {
     margin-left: 100%; } }
-nav .nav-brand p {
-  margin: 0; }
-nav .nav-list ul {
-  list-style: none;
-  display: inline-flex;
-  padding-left: 0; }
-  nav .nav-list ul li {
-    padding-right: 10%; }
+nav.col-lg-12 {
+  background-color: lightblue;
+  padding: 0; }
+  nav.col-lg-12 .nav-brand p {
+    margin: 0; }
+  nav.col-lg-12 .nav-list ul {
+    list-style: none;
+    display: inline-flex;
+    padding-left: 0; }
+    nav.col-lg-12 .nav-list ul li {
+      padding-left: 3em; }
 
 /**
  * 1. Change the default font family in all browsers (opinionated).

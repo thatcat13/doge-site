@@ -17,15 +17,3 @@ html {
 }
 
 //wireframing code
-/* For testing only */
-
-*:not(body):not(html) {
-  box-sizing:border-box;
-  border:1px dashed #000;
-}
-
-[class*='col-'] {
-  min-height: 100px;
-}
-
-/* End for testing */

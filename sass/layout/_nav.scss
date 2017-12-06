@@ -1,4 +1,6 @@
-nav {
+nav.col-lg-12 {
+  background-color: lightblue;
+  padding: 0;
   & .nav-brand {
     & img {
     }
@@ -12,7 +14,7 @@ nav {
       display: inline-flex;
       padding-left: 0;
       & li {
-        padding-right: 10%;
+        padding-left: 3em;
       }
     }
   }
