@@ -3,10 +3,14 @@
   margin: 0 auto;
 }
 
+.wrapper, .row, .hero, .nav, .footer, .intro, .gallery {
+  @extend %clearfix;
+}
+
 [class*='col-'] {
     float: left;
     padding: 1em;
-    min-height: 1px;
+    // min-height: 1px;
 }
 
 //small and above grid
@@ -28,6 +32,9 @@
       .col-md-#{$i}{
         width: 100% / $grid-columns * $i;
       }
+      .offset-md-#{$i} {
+        margin-left: 100% / $grid-columns * $i;
+      }
   }
 }
 
@@ -35,6 +42,10 @@
   @for $i from 1 through $grid-columns {
       .col-lg-#{$i}{
         width: 100% / $grid-columns * $i;
+      }
+
+      .offset-lg-#{$i} {
+        margin-left: 100% / $grid-columns * $i;
       }
   }
 }

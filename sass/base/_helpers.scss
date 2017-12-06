@@ -1,11 +1,17 @@
 /**
  * Clear inner floats
  */
-.clearfix::after {
-  clear: both;
-  content: '';
-  display: table;
-}
+ %clearfix {
+     *zoom: 1;
+     &:before,
+     &:after {
+         content: " ";
+         display: table;
+     }
+     &:after {
+         clear: both;
+     }
+ }
 
 /**
  * Main content containers
@@ -21,3 +27,11 @@
   padding-right: 20px; /* 3 */
   width: 100%; /* 1 */
  }
+
+ //make all images fluid
+
+ img {
+    width: auto;
+    max-width: 100%;
+    height: auto !important;
+}
