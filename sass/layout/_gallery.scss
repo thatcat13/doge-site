@@ -1,3 +1,7 @@
+.gallery {
+  background: $color-linen;
+}
+
 @media screen and (max-width: 767px) {
   .card-1, .card-2, .card-3 {
     @include grid(1, 5%);

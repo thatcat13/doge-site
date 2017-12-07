@@ -1,0 +1,30 @@
+.footer-page-btm {
+  background: $color-grey;
+  height: $footer-height-default;
+  text-align: $footer-text-align;
+}
+
+.footer-content {
+  padding-top: 25px;
+
+  & button {
+    @include border-radius(2px);
+    color: $color-black;
+    background: $color-linen;
+    height: 50px;
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+.footer-icons ul {
+  list-style: none;
+  padding: 0;
+  & li {
+    display: inline-flex;
+    padding-left: 0;
+    & i {
+      padding-left: 1em;
+    }
+  }
+}

@@ -1,9 +1,16 @@
+//breakpoint variables
+// $breakpoint-small: "only screen and (min-width: 550px)";
+$breakpoint-medium: "only screen and (min-width: 768px)";
+$breakpoint-large: "only screen and (min-width: 1000px)";
+
 //color variables
 $color-offblack: rgba(42, 43, 46, 1);
 $color-linen: rgba(247, 243, 227, 1);
 $color-grey: rgba(90, 90, 102, 1);
 $color-green: rgba(164, 194, 168, 1);
 $color-black: rgba(8, 9, 10, 1);
+$color-grey-fade: rgba(90, 90, 102, .4);
+
 
 //hero variables
 $hero-image-url: url("../img/nose.jpg");
@@ -17,7 +24,7 @@ $grid-columns: 12;
 $grid-max-width-md: 720px;
 $grid-max-width: 1200px;
 
-//card-variables
+//card variables
 $card-border: solid 1px lightgray;
 $card-box-shadow: 1px 1px 5px #888888;
 $card-display: inline-block;
@@ -28,8 +35,6 @@ $card-padding-sm: 20px;
 $card-padding-md: 0px;
 $card-padding-md: 0px;
 
-
-//breakpoint variables
-// $breakpoint-small: "only screen and (min-width: 550px)";
-$breakpoint-medium: "only screen and (min-width: 768px)";
-$breakpoint-large: "only screen and (min-width: 1000px)";
+//footer variables
+$footer-height-default: 150px;
+$footer-text-align: center;

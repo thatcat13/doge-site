@@ -1,14 +1,25 @@
 section.intro {
-  background: $color-offblack;
-  // color: $color-linen;
-  .col-12.col-lg-7 {
+  background: $color-linen;
+  & button {
+    @include border-radius(2px);
+    color: $color-black;
     background: $color-linen;
+    height: 50px;
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .intro-footer {
+    padding-top: 25px;
+  }
+
+  .col-12.col-lg-7 {
+    background: $color-grey;
     @include card;
   }
   .col-12.col-lg-5 {
     background: $color-green;
     @include card;
-
     margin-bottom: $card-margin-top;
   }
 }
