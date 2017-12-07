@@ -283,7 +283,12 @@ section.header {
   background: url("../img/nose.jpg") center no-repeat;
   height: 400px;
   width: 100%;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
+  section.header .title {
+    position: absolute;
+    top: 64%;
+    left: 8%; }
 
 section.intro {
   background: #2a2b2e; }
@@ -292,17 +297,18 @@ section.intro {
     border: solid 1px lightgray;
     box-shadow: 1px 1px 5px #888888;
     text-align: center;
-    padding: 50px 0;
-    height: 400px;
+    padding: 20px;
+    height: 300px;
     margin-top: 40px; }
   section.intro .col-12.col-lg-5 {
     background: #a4c2a8;
     border: solid 1px lightgray;
     box-shadow: 1px 1px 5px #888888;
     text-align: center;
-    padding: 50px 0;
-    height: 400px;
-    margin-top: 40px; }
+    padding: 20px;
+    height: 300px;
+    margin-top: 40px;
+    margin-bottom: 40px; }
 
 nav.col-12 {
   padding: 0;
@@ -316,6 +322,22 @@ nav.col-12 {
     nav.col-12 .nav-list ul li {
       padding-left: 3em; }
 
+@media screen and (max-width: 767px) {
+  .card-1, .card-2, .card-3 {
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 100%; }
+    .card-1:nth-child(1n), .card-2:nth-child(1n), .card-3:nth-child(1n) {
+      margin-right: 0; } }
+@media screen and (min-width: 768px) {
+  .card-1, .card-2, .card-3 {
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 30%; }
+    .card-1:nth-child(3n), .card-2:nth-child(3n), .card-3:nth-child(3n) {
+      margin-right: 0; } }
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Correct the line height in all browsers.

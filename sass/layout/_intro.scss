@@ -8,5 +8,7 @@ section.intro {
   .col-12.col-lg-5 {
     background: $color-green;
     @include card;
+
+    margin-bottom: $card-margin-top;
   }
 }

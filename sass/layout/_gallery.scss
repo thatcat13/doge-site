@@ -1,0 +1,12 @@
+@media screen and (max-width: 767px) {
+  .card-1, .card-2, .card-3 {
+    @include grid(1, 5%);
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .card-1, .card-2, .card-3 {
+    @include grid(3, 5%);
+  }
+}

@@ -3,4 +3,10 @@ section.header {
   height: $hero-height-default;
   width: 100%;
   background-size: cover;
+  position: relative;
+  & .title {
+    position: absolute;
+    top: 64%;
+    left: 8%;
+  }
 }
