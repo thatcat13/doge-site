@@ -1,9 +1,9 @@
 .wrapper {
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
 }
 
-.wrapper, .row, .hero, .nav, .footer, .intro, .gallery {
+.wrapper, .row, .hero, .nav, .footer, .intro, .gallery, .container {
   @extend %clearfix;
 }
 
@@ -25,7 +25,7 @@
 
 @media #{$breakpoint-medium} {
   .wrapper {
-    width: 96%;
+    width: 100%;
     max-width: $grid-max-width;
   }
   @for $i from 1 through $grid-columns {

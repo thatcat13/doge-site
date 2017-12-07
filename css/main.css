@@ -15,12 +15,12 @@ html {
 /**
  * Clear inner floats
  */
-.wrapper, .row, .hero, .nav, .footer, .intro, .gallery {
+.wrapper, .row, .hero, .nav, .footer, .intro, .gallery, .container {
   *zoom: 1; }
-  .wrapper:before, .row:before, .hero:before, .nav:before, .footer:before, .intro:before, .gallery:before, .wrapper:after, .row:after, .hero:after, .nav:after, .footer:after, .intro:after, .gallery:after {
+  .wrapper:before, .row:before, .hero:before, .nav:before, .footer:before, .intro:before, .gallery:before, .container:before, .wrapper:after, .row:after, .hero:after, .nav:after, .footer:after, .intro:after, .gallery:after, .container:after {
     content: " ";
     display: table; }
-  .wrapper:after, .row:after, .hero:after, .nav:after, .footer:after, .intro:after, .gallery:after {
+  .wrapper:after, .row:after, .hero:after, .nav:after, .footer:after, .intro:after, .gallery:after, .container:after {
     clear: both; }
 
 /**
@@ -53,7 +53,7 @@ img {
 
 .wrapper {
   width: 100%;
-  margin: 0 auto; }
+  margin: 0; }
 
 [class*='col-'] {
   float: left;
@@ -133,7 +133,7 @@ img {
 
 @media only screen and (min-width: 768px) {
   .wrapper {
-    width: 96%;
+    width: 100%;
     max-width: 1200px; }
 
   .col-md-1 {
@@ -279,16 +279,41 @@ img {
 
   .offset-lg-12 {
     margin-left: 100%; } }
-nav.col-lg-12 {
-  background-color: lightblue;
-  padding: 0; }
-  nav.col-lg-12 .nav-brand p {
+section.header {
+  background: url("../img/nose.jpg") center no-repeat;
+  height: 400px;
+  width: 100%;
+  background-size: cover; }
+
+section.intro {
+  background: #2a2b2e; }
+  section.intro .col-12.col-lg-7 {
+    background: #f7f3e3;
+    border: solid 1px lightgray;
+    box-shadow: 1px 1px 5px #888888;
+    text-align: center;
+    padding: 50px 0;
+    height: 400px;
+    margin-top: 40px; }
+  section.intro .col-12.col-lg-5 {
+    background: #a4c2a8;
+    border: solid 1px lightgray;
+    box-shadow: 1px 1px 5px #888888;
+    text-align: center;
+    padding: 50px 0;
+    height: 400px;
+    margin-top: 40px; }
+
+nav.col-12 {
+  padding: 0;
+  position: fixed; }
+  nav.col-12 .nav-brand p {
     margin: 0; }
-  nav.col-lg-12 .nav-list ul {
+  nav.col-12 .nav-list ul {
     list-style: none;
     display: inline-flex;
     padding-left: 0; }
-    nav.col-lg-12 .nav-list ul li {
+    nav.col-12 .nav-list ul li {
       padding-left: 3em; }
 
 /**

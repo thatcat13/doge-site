@@ -1,6 +1,7 @@
-nav.col-lg-12 {
-  background-color: lightblue;
+nav.col-12 {
+  // background-color: lightblue;
   padding: 0;
+  position: fixed;
   & .nav-brand {
     & img {
     }

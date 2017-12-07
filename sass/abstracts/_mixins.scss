@@ -27,3 +27,12 @@
     margin-right: 0;
   }
 }
+
+@mixin card {
+  border: $card-border;
+  box-shadow: $card-box-shadow;
+  text-align: $card-text-align;
+  padding: $card-padding;
+  height: $card-height;
+  margin-top: $card-margin-top;
+}

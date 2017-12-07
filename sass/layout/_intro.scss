@@ -1,0 +1,12 @@
+section.intro {
+  background: $color-offblack;
+  // color: $color-linen;
+  .col-12.col-lg-7 {
+    background: $color-linen;
+    @include card;
+  }
+  .col-12.col-lg-5 {
+    background: $color-green;
+    @include card;
+  }
+}
