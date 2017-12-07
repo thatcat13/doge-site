@@ -72,16 +72,26 @@ body {
     width: 60%;
     margin: 0 auto; }
 
-.footer-icons ul {
-  color: #08090a;
-  list-style: none;
-  padding: 0; }
-  .footer-icons ul li {
-    display: inline-flex;
-    padding-left: 0; }
-    .footer-icons ul li i {
-      padding-left: 1em; }
+.footer-icons {
+  background: #f7f3e3;
+  text-align: center; }
+  .footer-icons ul {
+    color: #08090a;
+    list-style: none;
+    padding: 15px 0;
+    margin: 0; }
+    .footer-icons ul li {
+      display: inline-flex;
+      padding-left: 0; }
+      .footer-icons ul li i {
+        padding-left: 1em; }
 
+@media screen and (min-width: 768px) {
+  .footer-content {
+    padding-top: 10px; }
+
+  p {
+    font-size: 1.25em; } }
 .wrapper {
   width: 100%;
   margin: 0; }
@@ -162,82 +172,78 @@ body {
 .offset-12 {
   margin-left: 100%; }
 
-@media only screen and (min-width: 768px) {
-  .wrapper {
-    width: 100%;
-    max-width: 1200px; }
+.col-md-1 {
+  width: 8.3333333333%; }
 
-  .col-md-1 {
-    width: 8.3333333333%; }
+.offset-md-1 {
+  margin-left: 8.3333333333%; }
 
-  .offset-md-1 {
-    margin-left: 8.3333333333%; }
+.col-md-2 {
+  width: 16.6666666667%; }
 
-  .col-md-2 {
-    width: 16.6666666667%; }
+.offset-md-2 {
+  margin-left: 16.6666666667%; }
 
-  .offset-md-2 {
-    margin-left: 16.6666666667%; }
+.col-md-3 {
+  width: 25%; }
 
-  .col-md-3 {
-    width: 25%; }
+.offset-md-3 {
+  margin-left: 25%; }
 
-  .offset-md-3 {
-    margin-left: 25%; }
+.col-md-4 {
+  width: 33.3333333333%; }
 
-  .col-md-4 {
-    width: 33.3333333333%; }
+.offset-md-4 {
+  margin-left: 33.3333333333%; }
 
-  .offset-md-4 {
-    margin-left: 33.3333333333%; }
+.col-md-5 {
+  width: 41.6666666667%; }
 
-  .col-md-5 {
-    width: 41.6666666667%; }
+.offset-md-5 {
+  margin-left: 41.6666666667%; }
 
-  .offset-md-5 {
-    margin-left: 41.6666666667%; }
+.col-md-6 {
+  width: 50%; }
 
-  .col-md-6 {
-    width: 50%; }
+.offset-md-6 {
+  margin-left: 50%; }
 
-  .offset-md-6 {
-    margin-left: 50%; }
+.col-md-7 {
+  width: 58.3333333333%; }
 
-  .col-md-7 {
-    width: 58.3333333333%; }
+.offset-md-7 {
+  margin-left: 58.3333333333%; }
 
-  .offset-md-7 {
-    margin-left: 58.3333333333%; }
+.col-md-8 {
+  width: 66.6666666667%; }
 
-  .col-md-8 {
-    width: 66.6666666667%; }
+.offset-md-8 {
+  margin-left: 66.6666666667%; }
 
-  .offset-md-8 {
-    margin-left: 66.6666666667%; }
+.col-md-9 {
+  width: 75%; }
 
-  .col-md-9 {
-    width: 75%; }
+.offset-md-9 {
+  margin-left: 75%; }
 
-  .offset-md-9 {
-    margin-left: 75%; }
+.col-md-10 {
+  width: 83.3333333333%; }
 
-  .col-md-10 {
-    width: 83.3333333333%; }
+.offset-md-10 {
+  margin-left: 83.3333333333%; }
 
-  .offset-md-10 {
-    margin-left: 83.3333333333%; }
+.col-md-11 {
+  width: 91.6666666667%; }
 
-  .col-md-11 {
-    width: 91.6666666667%; }
+.offset-md-11 {
+  margin-left: 91.6666666667%; }
 
-  .offset-md-11 {
-    margin-left: 91.6666666667%; }
+.col-md-12 {
+  width: 100%; }
 
-  .col-md-12 {
-    width: 100%; }
+.offset-md-12 {
+  margin-left: 100%; }
 
-  .offset-md-12 {
-    margin-left: 100%; } }
 @media only screen and (min-width: 1000px) {
   .col-lg-1 {
     width: 8.3333333333%; }
@@ -318,11 +324,16 @@ section.header {
   position: relative; }
   section.header .title {
     position: absolute;
-    top: 64%;
-    left: 8%; }
+    top: 56%;
+    left: 12%; }
     section.header .title h2 {
       font-size: 2.5em;
-      font-weight: 300; }
+      font-weight: 300;
+      margin-bottom: 0; }
+    section.header .title h4 {
+      margin-top: 5px; }
+    section.header .title i {
+      padding: 0 4px; }
 
 section.intro {
   background: #f7f3e3; }
@@ -344,7 +355,6 @@ section.intro {
     box-shadow: 1px 1px 5px #888888;
     text-align: center;
     padding: 20px;
-    height: 300px;
     margin-top: 40px; }
   section.intro .col-12.col-lg-5 {
     background: #a4c2a8;
@@ -352,10 +362,17 @@ section.intro {
     box-shadow: 1px 1px 5px #888888;
     text-align: center;
     padding: 20px;
-    height: 300px;
     margin-top: 40px;
     margin-bottom: 40px; }
 
+@media screen and (min-width: 768px) {
+  section.intro h4 {
+    font-size: 1.75em; }
+  section.intro p {
+    font-size: 1.25em; } }
+@media screen and (min-width: 1000px) {
+  section.intro .col-12.col-lg-7 {
+    margin-top: 0; } }
 nav.col-12 {
   background: rgba(90, 90, 102, 0.4);
   padding: 0;
@@ -409,13 +426,20 @@ input:checked ~ label {
     .card-1:nth-child(1n), .card-2:nth-child(1n), .card-3:nth-child(1n) {
       margin-right: 0; } }
 @media screen and (min-width: 768px) {
+  .gallery .container {
+    display: flex;
+    overflow: hidden; }
+
   .card-1, .card-2, .card-3 {
     float: left;
     margin-right: 5%;
     margin-bottom: 5%;
     width: 30%; }
     .card-1:nth-child(3n), .card-2:nth-child(3n), .card-3:nth-child(3n) {
-      margin-right: 0; } }
+      margin-right: 0; }
+    .card-1 img, .card-2 img, .card-3 img {
+      min-height: 320px;
+      object-fit: cover; } }
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Correct the line height in all browsers.

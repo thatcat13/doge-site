@@ -23,11 +23,11 @@
     }
 }
 
-@media #{$breakpoint-medium} {
-  .wrapper {
-    width: 100%;
-    max-width: $grid-max-width;
-  }
+// @media #{$breakpoint-medium} {
+//   .wrapper {
+//     width: 100%;
+//     max-width: $grid-max-width;
+//   }
   @for $i from 1 through $grid-columns {
       .col-md-#{$i}{
         width: 100% / $grid-columns * $i;
@@ -36,7 +36,7 @@
         margin-left: 100% / $grid-columns * $i;
       }
   }
-}
+
 
 @media #{$breakpoint-large} {
   @for $i from 1 through $grid-columns {

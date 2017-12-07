@@ -6,11 +6,18 @@ section.header {
   position: relative;
   & .title {
     position: absolute;
-    top: 64%;
-    left: 8%;
+    top: 56%;
+    left: 12%;
     & h2 {
       font-size: 2.5em;
       font-weight: 300;
+      margin-bottom: 0;
+    }
+    & h4 {
+      margin-top: 5px;
+    }
+    & i {
+      padding: 0 4px;
     }
   }
 }

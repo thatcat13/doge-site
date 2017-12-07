@@ -10,7 +10,16 @@
 
 
 @media screen and (min-width: 768px) {
+  .gallery .container{
+    display: flex;
+    overflow: hidden;
+  }
   .card-1, .card-2, .card-3 {
     @include grid(3, 5%);
+    img {
+      min-height: 320px;
+      object-fit: cover;
+    }
+
   }
 }
