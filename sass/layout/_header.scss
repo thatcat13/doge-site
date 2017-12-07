@@ -8,5 +8,9 @@ section.header {
     position: absolute;
     top: 64%;
     left: 8%;
+    & h2 {
+      font-size: 2.5em;
+      font-weight: 300;
+    }
   }
 }

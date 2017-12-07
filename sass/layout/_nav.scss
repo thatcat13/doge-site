@@ -4,9 +4,8 @@ nav.col-12 {
   position: fixed;
   & .nav-brand {
     & img {
-    }
-    & p {
-      margin: 0;
+      padding-left: 10px;
+      padding-top: 5px;
     }
   }
   & .nav-list {

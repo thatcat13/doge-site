@@ -51,6 +51,9 @@ img {
 .equal-height {
   display: flex; }
 
+body {
+  font-family: 'Spectral SC', serif; }
+
 .footer-page-btm {
   background: #5a5a66;
   height: 150px;
@@ -70,6 +73,7 @@ img {
     margin: 0 auto; }
 
 .footer-icons ul {
+  color: #08090a;
   list-style: none;
   padding: 0; }
   .footer-icons ul li {
@@ -316,6 +320,9 @@ section.header {
     position: absolute;
     top: 64%;
     left: 8%; }
+    section.header .title h2 {
+      font-size: 2.5em;
+      font-weight: 300; }
 
 section.intro {
   background: #f7f3e3; }
@@ -353,8 +360,9 @@ nav.col-12 {
   background: rgba(90, 90, 102, 0.4);
   padding: 0;
   position: fixed; }
-  nav.col-12 .nav-brand p {
-    margin: 0; }
+  nav.col-12 .nav-brand img {
+    padding-left: 10px;
+    padding-top: 5px; }
   nav.col-12 .nav-list {
     padding: 20px; }
     nav.col-12 .nav-list input#menu {
