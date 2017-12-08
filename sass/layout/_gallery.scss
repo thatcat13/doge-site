@@ -12,14 +12,20 @@
 @media screen and (min-width: 768px) {
   .gallery .container{
     display: flex;
-    overflow: hidden;
+    overflow: visible;
   }
   .card-1, .card-2, .card-3 {
     @include grid(3, 5%);
+    overflow: visible;
     img {
-      min-height: 320px;
+      min-height: 332px;
       object-fit: cover;
-    }
 
+      &:hover {
+      transform: scale(1.1);
+      transition: ease-in-out .75s;
+      box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.5);
+      }
+    }
   }
 }

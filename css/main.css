@@ -428,18 +428,23 @@ input:checked ~ label {
 @media screen and (min-width: 768px) {
   .gallery .container {
     display: flex;
-    overflow: hidden; }
+    overflow: visible; }
 
   .card-1, .card-2, .card-3 {
     float: left;
     margin-right: 5%;
     margin-bottom: 5%;
-    width: 30%; }
+    width: 30%;
+    overflow: visible; }
     .card-1:nth-child(3n), .card-2:nth-child(3n), .card-3:nth-child(3n) {
       margin-right: 0; }
     .card-1 img, .card-2 img, .card-3 img {
-      min-height: 320px;
-      object-fit: cover; } }
+      min-height: 332px;
+      object-fit: cover; }
+      .card-1 img:hover, .card-2 img:hover, .card-3 img:hover {
+        transform: scale(1.1);
+        transition: ease-in-out .75s;
+        box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.5); } }
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Correct the line height in all browsers.
